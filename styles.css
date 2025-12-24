@@ -246,6 +246,13 @@ body {
     background: transparent;
     border: none;
     padding: 0;
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    min-height: 48px;
+    max-width: 48px;
+    max-height: 48px;
 }
 
 .social-icon-link:hover {
@@ -256,7 +263,14 @@ body {
 .social-icon {
     width: 48px;
     height: 48px;
+    min-width: 48px;
+    min-height: 48px;
+    max-width: 48px;
+    max-height: 48px;
     object-fit: contain;
+    object-position: center;
+    display: block;
+    flex-shrink: 0;
     filter: none;
     display: block;
 }
@@ -1236,11 +1250,20 @@ body {
     .social-icon-link {
         width: 40px;
         height: 40px;
+        min-width: 40px;
+        min-height: 40px;
+        max-width: 40px;
+        max-height: 40px;
+        flex-shrink: 0;
     }
     
     .social-icon {
-        width: 20px;
-        height: 20px;
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+        min-height: 40px;
+        max-width: 40px;
+        max-height: 40px;
     }
     
     .hero-title {
