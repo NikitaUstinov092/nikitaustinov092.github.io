@@ -13,6 +13,8 @@ const translations = {
         'services.title': 'Опыт работы',
         'techStack.title': 'Стек',
         'contact.title': 'Контакты',
+        'contact.phone': 'Телефон',
+        'contact.email': 'Почта',
         'contact.quote': '«Общение — это начало любого великого дела.» — Дмитрий Менделеев',
         'portfolio.title': 'Проекты',
         'portfolio.subtitle': 'Некоторые из моих работ',
@@ -63,6 +65,8 @@ const translations = {
         'services.title': 'Work Experience',
         'techStack.title': 'Tech Stack',
         'contact.title': 'Contact',
+        'contact.phone': 'Phone',
+        'contact.email': 'Email',
         'contact.quote': '"An idea becomes valuable only when it is realized together with others." — Thomas Edison',
         'portfolio.title': 'Projects',
         'portfolio.subtitle': 'Some of My Work',
@@ -498,6 +502,92 @@ class TechStackNav {
     }
 }
 
+// Email Copy Handler
+class EmailCopyHandler {
+    constructor(languageSwitcher) {
+        this.languageSwitcher = languageSwitcher;
+        this.emailCard = document.querySelector('.contact-card-email');
+        this.phoneCard = document.querySelector('.contact-card-phone');
+        this.init();
+    }
+    
+    init() {
+        // Email card click handler
+        if (this.emailCard) {
+            this.emailCard.addEventListener('click', (e) => {
+                e.preventDefault();
+                const emailElement = this.emailCard.querySelector('.contact-email');
+                const email = emailElement ? (emailElement.getAttribute('data-email') || emailElement.textContent.trim()) : 'i@nustinov.ru';
+                this.copyToClipboard(email);
+            });
+        }
+        
+        // Phone card click handler
+        if (this.phoneCard) {
+            this.phoneCard.addEventListener('click', (e) => {
+                e.preventDefault();
+                window.location.href = 'tel:+79313694024';
+            });
+        }
+    }
+    
+    async copyToClipboard(text) {
+        try {
+            await navigator.clipboard.writeText(text);
+            this.showNotification();
+        } catch (err) {
+            console.error('Failed to copy email:', err);
+            // Fallback for older browsers
+            const textArea = document.createElement('textarea');
+            textArea.value = text;
+            textArea.style.position = 'fixed';
+            textArea.style.opacity = '0';
+            document.body.appendChild(textArea);
+            textArea.select();
+            try {
+                document.execCommand('copy');
+                this.showNotification();
+            } catch (e) {
+                console.error('Fallback copy failed:', e);
+            }
+            document.body.removeChild(textArea);
+        }
+    }
+    
+    showNotification() {
+        // Remove existing notification if any
+        const existing = document.querySelector('.copy-notification');
+        if (existing) {
+            existing.remove();
+        }
+        
+        // Create notification element
+        const notification = document.createElement('div');
+        notification.className = 'copy-notification';
+        
+        // Get current language and set appropriate message
+        const currentLang = this.languageSwitcher ? this.languageSwitcher.currentLang : 'ru';
+        notification.textContent = currentLang === 'ru' ? 'Скопировано' : 'copied';
+        
+        document.body.appendChild(notification);
+        
+        // Trigger animation
+        setTimeout(() => {
+            notification.classList.add('show');
+        }, 10);
+        
+        // Remove after animation
+        setTimeout(() => {
+            notification.classList.remove('show');
+            setTimeout(() => {
+                if (notification.parentNode) {
+                    notification.parentNode.removeChild(notification);
+                }
+            }, 300);
+        }, 2000);
+    }
+}
+
 // Initialize everything when DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
     // Initialize LiquidEther background for hero section
@@ -514,6 +604,7 @@ document.addEventListener('DOMContentLoaded', () => {
     new ActiveNavLink();
     new ScrollAnimations();
     new CTAHandlers();
+    new EmailCopyHandler(languageSwitcher);
     
     console.log('Portfolio landing page initialized!');
 });
