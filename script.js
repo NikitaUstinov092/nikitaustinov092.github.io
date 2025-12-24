@@ -41,15 +41,15 @@ const translations = {
         'exp.ar.achievement3': 'Интеграция серверной части: загрузка и обновление контента / бандлов с сервера',
         'exp.ar.achievement4': 'Оптимизация UX и производительности для стабильной работы на мобильных устройствах',
         'exp.ar.achievement5': 'Подготовка к публикации и сопровождение проекта',
-        'portfolio.mechanical.title': 'WebGL Mechanical Simulator',
+        'portfolio.mechanical.title': 'Симулятор механики',
         'portfolio.mechanical.description': 'Симулятор механики с интерактивными лабораторными работами и физикой в реальном времени. Работает во внутренней образовательной платформе в браузере, поддерживает сохранения и позволяет собирать конструкции из обширного инвентаря.',
-        'portfolio.optics.title': 'WebGL Optics Simulator',
+        'portfolio.optics.title': 'Симулятор оптики',
         'portfolio.optics.description': 'Интерактивный симулятор оптики с инвентарём приборов, разными источниками света и системой линз, формирующей проекции на экране. Содержит лабораторные задания для практики и обучения, работает в браузере на внутренней платформе заказчика и сохраняет личный прогресс.',
         'portfolio.rabbit.title': 'Rabbit Hole',
         'portfolio.rabbit.description': 'Атмосферный приключенческий survival-horror с упором на исследование, напряжённое выживание, стелс и прямой бой. Игра сочетает исследование локаций и механики выживания, создавая мрачную и напряжённую атмосферу.',
         'portfolio.awakening.title': 'Awakening: The Story of Elizabeth',
         'portfolio.awakening.description': 'Мобильный мистический квест от первого лица с атмосферным исследованием и интерактивной средой. Создан на Unity для iOS и Android, поддерживает сенсорное управление, включает интерактивные объекты, аудио-эффекты, головоломки и элементы выживания.',
-        'portfolio.projector.title': 'Interactive Projector Game',
+        'portfolio.projector.title': 'Save Cows',
         'portfolio.projector.description': 'Интерактивная проекторная игра с управлением жестами и предметами. Игроки защищают коров от летающих тарелок. Проект демонстрирует опыт создания мультимедийных приложений на Unity с отслеживанием действий в реальном времени и проекцией на стены или пол.'
     },
     en: {
@@ -95,13 +95,13 @@ const translations = {
         'exp.ar.achievement5': 'Prepared project for publication and provided ongoing support',
         'portfolio.mechanical.title': 'Mechanical Simulator',
         'portfolio.mechanical.description': 'A simulator featuring interactive lab exercises and real-time physics. Runs within an internal educational platform in the browser, supports saving progress, and allows users to assemble constructions from an extensive inventory.',
-        'portfolio.optics.title': 'WebGL Optics Simulator',
+        'portfolio.optics.title': 'Optics Simulator',
         'portfolio.optics.description': 'An interactive optics simulator featuring a toolbox of instruments, multiple light sources, and a lens system that forms projections on the screen. Includes lab exercises for hands-on practice and learning, runs in the browser on the client\'s internal platform, and saves individual progress.',
         'portfolio.rabbit.title': 'Rabbit Hole',
         'portfolio.rabbit.description': 'An atmospheric adventure survival-horror game focused on exploration, tense survival, stealth, and direct combat. Combines location exploration with survival mechanics to create a dark and intense atmosphere.',
         'portfolio.awakening.title': 'Awakening: The Story of Elizabeth',
         'portfolio.awakening.description': 'A mobile first-person mystical quest featuring atmospheric exploration and an interactive environment. Developed in Unity for iOS and Android, it supports touch controls and includes interactive objects, audio effects, puzzles, and survival elements.',
-        'portfolio.projector.title': 'Interactive Projector Game',
+        'portfolio.projector.title': 'Save Cows',
         'portfolio.projector.description': 'An interactive projector-based game with gesture and object controls. Players defend cows from flying saucers. The project demonstrates experience in creating multimedia Unity applications with real-time action tracking and projection onto walls or floors.'
     }
 };
