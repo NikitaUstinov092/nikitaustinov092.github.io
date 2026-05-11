@@ -50,7 +50,9 @@ const translations = {
         'portfolio.awakening.title': 'Awakening: The Story of Elizabeth',
         'portfolio.awakening.description': 'Мобильный мистический квест от первого лица с атмосферным исследованием и интерактивной средой. Создан на Unity для iOS и Android, поддерживает сенсорное управление, включает интерактивные объекты, аудио-эффекты, головоломки и элементы выживания.',
         'portfolio.projector.title': 'Save Cows',
-        'portfolio.projector.description': 'Интерактивная проекторная игра с управлением жестами и предметами. Игроки защищают коров от летающих тарелок. Проект демонстрирует опыт создания мультимедийных приложений на Unity с отслеживанием действий в реальном времени и проекцией на стены или пол.'
+        'portfolio.projector.description': 'Интерактивная проекторная игра с управлением жестами и предметами. Игроки защищают коров от летающих тарелок. Проект демонстрирует опыт создания мультимедийных приложений на Unity с отслеживанием действий в реальном времени и проекцией на стены или пол.',
+        'portfolio.memhunt.title': 'MEMHUNT',
+        'portfolio.memhunt.description': 'MemHunt — это крипто-игра нового поколения, где пользователи выполняют задания, участвуют в мем-активностях и получают награды внутри игровой экосистемы. Проект сочетает элементы Web3, развлечения и сообщества, позволяя игрокам зарабатывать бонусы, прокачивать аккаунт и участвовать в различных событиях.'
     },
     en: {
         'nav.about': 'Home',
@@ -102,7 +104,9 @@ const translations = {
         'portfolio.awakening.title': 'Awakening: The Story of Elizabeth',
         'portfolio.awakening.description': 'A mobile first-person mystical quest featuring atmospheric exploration and an interactive environment. Developed in Unity for iOS and Android, it supports touch controls and includes interactive objects, audio effects, puzzles, and survival elements.',
         'portfolio.projector.title': 'Save Cows',
-        'portfolio.projector.description': 'An interactive projector-based game with gesture and object controls. Players defend cows from flying saucers. The project demonstrates experience in creating multimedia Unity applications with real-time action tracking and projection onto walls or floors.'
+        'portfolio.projector.description': 'An interactive projector-based game with gesture and object controls. Players defend cows from flying saucers. The project demonstrates experience in creating multimedia Unity applications with real-time action tracking and projection onto walls or floors.',
+        'portfolio.memhunt.title': 'MEMHUNT',
+        'portfolio.memhunt.description': 'MemHunt is a next-generation crypto game where users complete tasks, participate in meme activities, and earn rewards within the game ecosystem. The project combines Web3, entertainment, and community elements, allowing players to earn bonuses, level up their accounts, and take part in various events.'
     }
 };
 

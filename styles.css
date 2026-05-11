@@ -541,6 +541,10 @@ body {
     background-image: url('Icons/optics.png');
 }
 
+.memhunt-thumbnail {
+    background-image: url('Icons/memhunt_converted.jpeg');
+}
+
 .video-thumbnail:hover {
     opacity: 0.9;
 }
